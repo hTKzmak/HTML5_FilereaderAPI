@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML5 КТ4 | FileReader API</title>
+</head>
+
+<body>
+    <div class="drop-area">
+        <input style="display: none;" type="file" id="inputFile" />
+        <label for="inputFile" id="inputFile">Выберите файл&nbsp;</label>
+        <p>или перетащите его сюда</p>
+    </div>
+    <div class="selected-file">
+        <p>Имя файла: <span class="seleted-file-name">-</span></p>
+        <p>Тип файла: <span class="seleted-file-type">-</span></p>
+        <p>Размер файла: <span class="seleted-file-size">-</span></p>
+        <div class="filters">
+            <input type="text" id="fileType" placeholder="Фильтр по типу: image/png, text/plain">
+            <input type="number" id="numberValue" placeholder="Фильтр по размеру (Кбайт)">
+            <input type="submit" id="submit" value="Применить фильтр">
+        </div>
+        <div class="file-list">
+            <div class="file-list_txt" style="display: flex; justify-content: space-between;">
+                <h3>Список файлов:</h3>
+                <button id="updateList" style="margin: 15px;">Обновить список</button>
+            </div>
+            <ul></ul>
+        </div>
+    </div>
+
+    <script src="./scripts/inputFile.js"></script>
+    <script src="./scripts/dragAndDrop.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>

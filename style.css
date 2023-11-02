@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    background: #1c1e1f;
+    color: #c9d7d8;
+}
+
+p,
+h3,
+ul,
+li,
+a {
+    background: none;
+}
+
+a{
+    color: rgb(43, 213, 239);
+}
+
+.drop-area {
+    display: flex;
+    min-height: 40px;
+    max-width: 460px;
+    margin: 100px auto;
+    padding: 1.5rem;
+    border-radius: 0.25rem;
+    background-color: #1e2021;
+    border: 2px dashed #3b3f42;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 170px;
+    transition: 0.5s;
+}
+
+.drop-area-over {
+    border: 2px dashed #fc1e1f;
+    -webkit-box-shadow: 1px 1px 50px 15px rgba(252, 30, 31, 0.2);
+}
+
+.selected-file {
+    min-height: 80px;
+    max-width: 790px;
+    margin: 100px auto;
+    padding: 1.5rem;
+    border-radius: 0.25rem;
+    background-color: #1e2021;
+    border: 2px solid #3b3f42;
+    margin-top: 0;
+}
+
+.file-list {
+    margin-top: 15px;
+    min-height: 30px;
+    padding-left: 1.5rem;
+    border-radius: 0.25rem;
+    background-color: #2d2f31;
+    border: 2px solid #3b3f42;
+}
+
+label {
+    color: #fc1e1f;
+    transition: 0.5s;
+    cursor: pointer;
+    background: none;
+}
+
+label:hover {
+    text-shadow: 0 0 10px #fc1e1f, 0 0 20px #fc1e1f, 0 0 30px #fc1e1f, 0 0 40px #fc1e1f;
+}
+
+input, #updateList {
+    width: 230px;
+    height: 30px;
+    background-color: #2b2d2f;
+    border: 2px solid #3b3f42;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px 15px;
+    transition: 0.5s;
+}
+
+input:hover, #updateList:hover {
+    border: 2px solid #646a6e;
+}
+
+#submit {
+    height: 44px;
+    transition: 0.5s;
+    padding: 5px 15px;
+}
+
+#submit:hover, #updateList:hover {
+    background-color: #3b3f42;
+}
+
+.filters {
+    background: none;
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.file-list_txt{
+    background: none;
+}
