@@ -36,12 +36,12 @@ dropArea.addEventListener("drop", (e) => {
         reader.onload = function () {
             fileName.textContent = transferredFile.name;
             fileType.textContent = transferredFile.type;
-            fileSize.textContent = `${(transferredFile.size / 1024).toFixed(1)} Кбайт`;
+            fileSize.textContent = `${(transferredFile.size / 1024).toFixed(1)} Кбайт`; //toFixed() преобразует число в строку, сохраняя указанное число десятичных знаков
 
             const fileObject = {
                 'file_name': transferredFile.name,
                 'file_type': transferredFile.type,
-                'file_size': `${(transferredFile.size / 1024).toFixed(1)} Кбайт`,
+                'file_size': `${(transferredFile.size / 1024).toFixed(1)} Кбайт`, 
                 'file_content': reader.result
             }
 
@@ -62,4 +62,3 @@ dropArea.addEventListener("drop", (e) => {
         }
     });
 });
-
