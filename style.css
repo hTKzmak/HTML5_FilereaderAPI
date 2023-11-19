@@ -107,4 +107,10 @@ input:hover, #updateList:hover {
 
 .file-list_txt{
     background: none;
+    display: flex; 
+    justify-content: space-between;
+}
+
+#updateList{
+    margin: 15px;
 }
