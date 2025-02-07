@@ -1,4 +1,7 @@
 # HTML5_FilereaderAPI
+
+Result: https://htkzmak.github.io/HTML5_FilereaderAPI/
+
 Task: Нужно сделать что-то на подобии локального файлового хранилища!
 Требования: 
     Реализовать поле для сброса файлов (drag and drop)
